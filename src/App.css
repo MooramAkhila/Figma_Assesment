@@ -1,0 +1,43 @@
+:root {
+  --primary-color: #4f46e5;
+  --secondary-color: #3730a3;
+  --accent-color: #06b6d4;
+  --background-color: #f8fafc;
+  --text-color: #1e293b;
+  --border-radius: 12px;
+  --gradient: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  line-height: 1.5;
+}
+
+.app {
+  min-height: 100vh;
+}
+
+main {
+  padding-top: 70px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.gradient-text {
+  background: var(--gradient);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
